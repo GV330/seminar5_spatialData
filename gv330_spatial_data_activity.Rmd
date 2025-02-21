@@ -388,7 +388,6 @@ schools_plot_interactive <-
           id = "SCHOOL_NAM", # the scroll-over name
           popup.vars = c("AGE_RANGE", "GENDER", "STATUS", "WARD_NAME")) + # variables when you click -- note the hilarious excel error in AGE
   tm_layout(title = "Schools Locations in London", inner.margins = c(0.1, 0.1, 0.1, 0.1), frame = FALSE) +
-  tmap_options(check.and.fix = TRUE) +
   tm_basemap(c('OpenStreetMap'))
 
 schools_plot_interactive
